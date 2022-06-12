@@ -1,0 +1,26 @@
+{
+    "students": [
+      { 
+        "id": 1, 
+        "name": "Maria", 
+        "lastName": "Conchita",
+        "age": "25",
+        "email": "MariaConchita@gmail.com"
+      },
+      { 
+        "id": 2, 
+        "name": "Juan", 
+        "lastName": "Calle",
+        "age": "30",
+        "email": "juancalles@gmail.com"
+      },
+      { 
+        "id": 3, 
+        "name": "Pedro", 
+        "lastName": "Navajas",
+        "age": "50",
+        "email": "pedronavajas@gmail.com"
+      }
+      
+    ]
+}
