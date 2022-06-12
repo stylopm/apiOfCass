@@ -5,6 +5,7 @@ const peticion = async() => {
     // lógica de obtener recursos de forma asíncrona en toda la red.
     const respuesta = await fetch(url);
     console.log(respuesta);
+    // const datos = await respuesta.json();
     const datos = await respuesta.json();
     console.log(datos);
 }
