@@ -3,7 +3,7 @@ const url = 'http://localhost:3000/books';
 const authorization = {
     'Autorizarion': 'Beare xasdeqkwerjucfvhsdjn'
 }
-const createBook = () => {
+const createBook = (event) => {
     console.log('Function createBook');
     const newBook = {
         name: "Book 2",
