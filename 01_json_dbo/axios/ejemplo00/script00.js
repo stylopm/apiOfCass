@@ -1,12 +1,8 @@
-// const url = 'http://localhost:3000/books';
-
-// axios.get(url).then(resp => {
-//     console.log(resp.data);
-// });
-
 console.log('Metodo axios');
-let url = 'http://localhost:3000/books';
-
+const url = 'http://localhost:3000/books';
+const authorization = {
+    'Autorizarion': 'Beare xasdeqkwerjucfvhsdjn'
+}
 const createBook = () => {
     console.log('Function createBook');
     const newBook = {
@@ -14,12 +10,13 @@ const createBook = () => {
         date: "01-02-2021",
         total_pages: "50"
     }
-    axios.post(url, newBook).then(resp => {
+    axios.post(url, { headers: authorization }, newBook).then(resp => {
         console.log(resp.data);
     })
 }
 const readBooks = () => {
-    axios.get(url).then(resp => {
+    axios.get(url, { headers: authorization }
+    ).then(resp => {
         console.log(resp.data);
     });
 }
@@ -30,12 +27,12 @@ const updateBook = () => {
         date: "01-02-2021",
         total_pages: "50"
     }
-    axios.put(`${url}/4`, updateBook).then(resp => {
+    axios.put(`${url}/4`, { headers: authorization }, updateBook).then(resp => {
         console.log(resp.data);
     })
 }
 const deleteBook = () => {
-    axios.delete(`${url}/4`).then(resp => {
+    axios.delete(`${url}/4`, { headers: authorization }).then(resp => {
         console.log(resp.data);
     })
 }
