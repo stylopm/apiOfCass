@@ -1,4 +1,5 @@
 console.log('Metodo fetch promise');
+// Metodo get = url
 let url = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur/mxn.json';
 const peticion = fetch(url)
     .then(response => {
