@@ -7,6 +7,8 @@ const peticion = async() => {
     console.log(respuesta);
     // const datos = await respuesta.json();
     const datos = await respuesta.json();
+
+    console.log(datos);
     return datos;
 }
 peticion();
