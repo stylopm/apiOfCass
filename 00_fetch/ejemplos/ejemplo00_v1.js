@@ -4,7 +4,11 @@ const peticion = fetch(url)
     .then(response => {
         console.log(response);
         response.json().then(
-            data => console.log(data)
+            data => {
+                const {mxn, date} = data
+                document.getElementById('mensaje').innerHTML = 
+                ` El valor es ${mxn}  el dia ${date} `
+            }
         )
     }
 )
