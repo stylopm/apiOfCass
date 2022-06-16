@@ -13,6 +13,7 @@ const createBook = () => {
             url, {
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': 'Beare sdasdasdasdasdfsfdgbfdgsdfg'
             },
             method: 'POST',
             body: JSON.stringify(newBook)
