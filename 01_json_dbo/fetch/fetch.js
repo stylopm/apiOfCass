@@ -37,13 +37,13 @@ const readBooks = () => {
 const updateBook = () => {
     console.log('updateBook');
     const newBook = {
-        name: "Book 2",
+        name: "Book 10",
         date: "01-02-2021",
         total_pages: "50"
     }
     const books = async () => {
         const resp = await fetch(
-            `${url}/4` 
+            `${url}/10` 
             , {
             headers: {
                 'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const deleteBook = () => {
     console.log('deleteBook');
     const books = async () => {
         const resp = await fetch(
-            `${url}/4` 
+            `${url}/11` 
             , {
             headers: {
                 'Content-Type': 'application/json',
