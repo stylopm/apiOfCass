@@ -66,5 +66,14 @@
       "total_pages": "50",
       "id": 14
     }
+  ],
+  "customers": [
+    {
+      "name": "test1",
+      "lastName": "test1",
+      "age": "80",
+      "email": "test@tes.com",
+      "id": 1
+    }
   ]
 }
