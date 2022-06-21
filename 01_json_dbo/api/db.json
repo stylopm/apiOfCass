@@ -74,6 +74,27 @@
       "age": "80",
       "email": "test@tes.com",
       "id": 1
+    },
+    {
+      "name": "Luis Antonio",
+      "lastName": "Murilo",
+      "age": "37",
+      "email": "apmurillo99@hotmail.com",
+      "id": 2
+    },
+    {
+      "name": "Luis Antonio",
+      "lastName": "Murilo",
+      "age": "37",
+      "email": "apmurillo99@hotmail.co",
+      "id": 3
+    },
+    {
+      "name": "Juan",
+      "lastName": "Hernandez",
+      "age": "41",
+      "email": "apppopo@tests.com",
+      "id": 4
     }
   ]
 }

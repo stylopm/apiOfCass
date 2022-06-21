@@ -5,16 +5,9 @@ const createCustomers = () => {
   const lastName = document.getElementById("lastname").value;
   const age = document.getElementById("age").value;
   const email = document.getElementById("email").value;
-  const newCustomer = {
-    name: name,
-    lastName: lastName,
-    age: age,
-    email: email,
-  };
-
   if (name === ''){
     alert('El campo nombre esta vacío');
-    return false;
+    return false; // Se pare la aplicación
   }
   if (lastName === ''){
     alert('El campo apellido esta vacío');
@@ -44,21 +37,28 @@ const createCustomers = () => {
     return false;
   }
 
-  if (!validateEmail(email)){
+  if (!validateEmail(email)) {
     alert('El campo email no cumple con el formato');
     return false;
   }
 
-  customers(newCustomer);
+  const newCustomer = {
+    name: name,
+    lastName: lastName,
+    age: age,
+    email: email,
+  };
+
+  createcustomers(newCustomer);
 };
 
 
 const validateEmail = (email) => {
-      var re = /\S+@\S+\.\S+/;
+      var re = /\S+@\S+\.\S+/; // Expresiones regulares
       return re.test(email);
 }
     
-const customers = async (data) => {
+const createcustomers = async (data) => {
   const resp = await fetch(url, {
     headers: {
       "Content-Type": "application/json",
